@@ -1,5 +1,5 @@
 //Document is the DOM can be accessed in the console with document.window.
-// Tree is from the top, html, body, p etc.
+// Tree is complete-tasksrom the top, html, body, p etc.
 
 //Problem: User interaction does not provide the correct results.
 //Solution: Add interactivity so the user can manage daily tasks.
@@ -10,14 +10,14 @@
 
 const taskInput = document.getElementById("new-task");//Add a new task.
 const addButton = document.getElementsByTagName("button")[0];//first button
-const incompleteTaskHolder = document.getElementById("incompleteTasks");//ul of #incompleteTasks
+const incompleteTaskHolder = document.getElementById("incomplete-tasks");//ul of #incompleteTasks
 const completedTasksHolder = document.getElementById("completed-tasks");//completed-tasks
 
 
 //New task list item
 var createNewTaskElement = function (taskString) {
 
-  var listItem = document.createElement("li");
+  var listItem = document.createElement("li")
 
   //input (checkbox)
   var checkBox = document.createElement("input");//checkbx
